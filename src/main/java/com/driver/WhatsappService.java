@@ -7,11 +7,9 @@ import java.util.List;
 
 @Service
 public class WhatsappService {
-
-
     WhatsappRepository whatsappRepository=new WhatsappRepository();
 
-    public void createUser(String name,String mobile) throws Exception {
+    public void createUser(String name,String mobile) throws Exception{
         whatsappRepository.createUser(name, mobile);
     }
 
@@ -36,6 +34,4 @@ public class WhatsappService {
     public int removeUser(User user)throws Exception{
         return whatsappRepository.removeUser(user);
     }
-
-
 }
